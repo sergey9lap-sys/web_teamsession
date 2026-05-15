@@ -766,8 +766,8 @@ main {
 }
 
 .registration-widget iframe {
-  width: 100%;
-  max-width: 100%;
+  width: min(100%, 520px);
+  max-width: calc(100vw - 52px);
   display: block;
   margin: 0 auto;
 }
@@ -1054,7 +1054,16 @@ main {
   }
 
   .registration-widget {
-    padding-inline: 10px;
+    width: 100%;
+    justify-items: center;
+    padding-inline: 0;
+  }
+
+  .registration-widget iframe {
+    width: 100% !important;
+    max-width: calc(100vw - 52px) !important;
+    margin-right: auto !important;
+    margin-left: auto !important;
   }
 
   .registration-widget button,
