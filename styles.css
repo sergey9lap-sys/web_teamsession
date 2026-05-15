@@ -779,13 +779,25 @@ main {
   box-sizing: border-box;
 }
 
+.registration-widget form,
+.registration-widget [class*="builder"],
+.registration-widget [class*="field"],
+.registration-widget [class*="part"],
+.registration-widget [style*="width"] {
+  max-width: 100% !important;
+  box-sizing: border-box !important;
+}
+
 .registration-widget button,
 .registration-widget input[type="button"],
 .registration-widget input[type="submit"],
+.registration-widget a[href*="javascript"],
 .registration-widget [role="button"],
 .registration-widget .btn,
 .registration-widget [class*="btn"],
-.registration-widget [class*="button"] {
+.registration-widget [class*="button"],
+.registration-widget [class*="submit"],
+.registration-widget [class*="part-button"] {
   max-width: 100% !important;
   white-space: normal;
 }
@@ -1069,16 +1081,20 @@ main {
   .registration-widget button,
   .registration-widget input[type="button"],
   .registration-widget input[type="submit"],
+  .registration-widget a[href*="javascript"],
   .registration-widget [role="button"],
   .registration-widget .btn,
   .registration-widget [class*="btn"],
-  .registration-widget [class*="button"] {
-    width: 100% !important;
+  .registration-widget [class*="button"],
+  .registration-widget [class*="submit"],
+  .registration-widget [class*="part-button"] {
+    width: calc(100% - 32px) !important;
     min-width: 0 !important;
     margin-right: auto !important;
     margin-left: auto !important;
     padding-right: 14px !important;
     padding-left: 14px !important;
+    transform: none !important;
     overflow-wrap: anywhere;
   }
 
